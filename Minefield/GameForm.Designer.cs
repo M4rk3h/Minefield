@@ -4075,7 +4075,6 @@
             this.btnEZ.TabIndex = 9;
             this.btnEZ.Text = "EZ MODE";
             this.btnEZ.UseVisualStyleBackColor = true;
-            this.btnEZ.Click += new System.EventHandler(this.btnEZ_Click);
             // 
             // btnTry
             // 
@@ -4085,7 +4084,6 @@
             this.btnTry.TabIndex = 11;
             this.btnTry.Text = "Restart";
             this.btnTry.UseVisualStyleBackColor = true;
-            this.btnTry.Click += new System.EventHandler(this.btnTry_Click);
             // 
             // btnGive
             // 
@@ -4095,7 +4093,6 @@
             this.btnGive.TabIndex = 12;
             this.btnGive.Text = "Give Up";
             this.btnGive.UseVisualStyleBackColor = true;
-            this.btnGive.Click += new System.EventHandler(this.btnGive_Click);
             // 
             // btnLeft
             // 
@@ -4105,7 +4102,6 @@
             this.btnLeft.Size = new System.Drawing.Size(20, 20);
             this.btnLeft.TabIndex = 6;
             this.btnLeft.UseVisualStyleBackColor = true;
-            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // btnUp
             // 
@@ -4115,7 +4111,6 @@
             this.btnUp.Size = new System.Drawing.Size(20, 20);
             this.btnUp.TabIndex = 5;
             this.btnUp.UseVisualStyleBackColor = true;
-            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
             // btnDown
             // 
@@ -4125,7 +4120,6 @@
             this.btnDown.Size = new System.Drawing.Size(20, 20);
             this.btnDown.TabIndex = 4;
             this.btnDown.UseVisualStyleBackColor = true;
-            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
             // btnRight
             // 
@@ -4135,7 +4129,6 @@
             this.btnRight.Size = new System.Drawing.Size(20, 20);
             this.btnRight.TabIndex = 3;
             this.btnRight.UseVisualStyleBackColor = true;
-            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // GameForm
             // 

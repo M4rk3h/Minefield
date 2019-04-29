@@ -358,10 +358,7 @@ namespace Minefield
                 }
             }
 
-            //Click the down button to move sprite down one column.
-            private void btnDown_Click(object sender, EventArgs e)
-            
-                if (keyData == Keys.S)
+            if (keyData == Keys.S)
                 {
                     //If allowed, update location
                     if (atY < 20)
