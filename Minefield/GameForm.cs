@@ -18,19 +18,15 @@ namespace Minefield
         int atY = 20;
         //A Boolean array that indicated where the can be.
         bool[,] bombs = new bool[21, 21];
-
         //Load the form called Form1
         public GameForm()
         {
             InitializeComponent();
-
             //Place the sprite at the start-up location
             //Which is declared above.
             drawsprite(atX, atY);
-
             //place the mines (bombs)
-            placeBombs(65);
-
+            placeBombs(50);
             //Check for bombs!
             chkbomb(atX, atY);
         }
@@ -41,10 +37,8 @@ namespace Minefield
         {
             //Get the label number by looking at the position of the sprite
             Label lbl = getLabel(atX, atY);
-
             //Change the selected labels background to White 'Color.White;'
             lbl.BackColor = Color.White;
-
             //Change the label to the sprite image named 'sprite;'
             //I have several images which are rotated
             //for up, down, left, right.
@@ -53,7 +47,6 @@ namespace Minefield
             lbl.Image = Properties.Resources.tankLeft;
             lbl.Image = Properties.Resources.tankRight;
         }
-
         //Function to undraw the sprite at location. (x,y)
         private void wipesprite(int x, int y)
         {
@@ -62,21 +55,17 @@ namespace Minefield
             //Now change the image to be null
             lbl.Image = null;               
         }
-        
             //Place Boms around the form.
             private void placeBombs(int target)
         {
             //Use a random number generator
             Random rng = new Random();
-
             //Set up variables
             int x;
             int y;
             int k = target;
-
             //Clear the current mines list
             Array.Clear(bombs, 0, bombs.Length);
-
             //With the random number generator, get a number from 1 - 20.
             do
             {
@@ -84,40 +73,41 @@ namespace Minefield
                 y = rng.Next(1, 20); //Generate number for Y
                 if (!bombs[x, y])
                 {
-                    bombs[x, y] = true;  //loop it under the number of bombs is what 
-                    k--;                 //number of bombs is what
-                                         //I declared earlier.
+                    bombs[x, y] = true;  // Loop until bombs = placeBombs number
+                    k--;                 
                 }
             //Reteat this until k > 0
             } while (k > 0);             
         }
-
             //Counts the bombs around the sprite.
             private void countBombs(int X, int Y)
         {
             int count = 0;
             int newx;
             int newy;
-
-            newx = X - 1; //Check for bomb left of sprite
+            //Check for bomb left of sprite
+            newx = X - 1; 
             if (newx > -1)
             {
                 if (bombs[newx, Y])
                     count++;
             }
-            newx = X + 1; //Check for bomb right of sprite
+            //Check for bomb right of sprite
+            newx = X + 1; 
             if (newx < 21)
             {
                 if (bombs[newx, Y])
                     count++;
             }
-            newy = Y - 1; //Check for bomb below sprite
+            //Check for bomb below sprite
+            newy = Y - 1; 
             if (newy > -1)
             {
                 if (bombs[X, newy])
                     count++;
             }
-            newy = Y + 1; //Check for bomb above sprite
+            //Check for bomb above sprite
+            newy = Y + 1; 
             if (newy < 21)
             {
                 if (bombs[X, newy])

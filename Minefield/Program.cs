@@ -16,8 +16,9 @@ namespace Minefield
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Set what page to run first below
             Application.Run(new Welcome()); 
-            // ^ Changed what form loads first, to the welcome form.
+            
             
         }
     }

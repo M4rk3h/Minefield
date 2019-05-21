@@ -51,3 +51,11 @@ C:\Users\GamingPC\Desktop\Minefield Post Demo\Minefield\obj\Debug\Minefield.cspr
 C:\Users\GamingPC\Desktop\Minefield Post Demo\Minefield\obj\Debug\Minefield.csproj.CoreCompileInputs.cache
 C:\Users\GamingPC\Desktop\Minefield Post Demo\Minefield\obj\Debug\Minefield.exe
 C:\Users\GamingPC\Desktop\Minefield Post Demo\Minefield\obj\Debug\Minefield.pdb
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.csprojAssemblyReference.cache
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.GameForm.resources
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.Properties.Resources.resources
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.Welcome.resources
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.csproj.GenerateResource.cache
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.csproj.CoreCompileInputs.cache
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.exe
+E:\CODE\Minefield\Minefield\obj\Debug\Minefield.pdb
