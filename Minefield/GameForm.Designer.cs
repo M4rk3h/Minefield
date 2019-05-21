@@ -845,7 +845,7 @@
             this.panel1.Controls.Add(this.label399);
             this.panel1.Controls.Add(this.label400);
             this.panel1.Location = new System.Drawing.Point(40, 55);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(533, 492);
             this.panel1.TabIndex = 0;
@@ -4464,7 +4464,7 @@
             // 
             this.textBoxDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDisplay.Location = new System.Drawing.Point(40, 556);
-            this.textBoxDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDisplay.Name = "textBoxDisplay";
             this.textBoxDisplay.ReadOnly = true;
             this.textBoxDisplay.Size = new System.Drawing.Size(319, 26);
@@ -4473,7 +4473,7 @@
             // btnEZ
             // 
             this.btnEZ.Location = new System.Drawing.Point(364, 556);
-            this.btnEZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEZ.Margin = new System.Windows.Forms.Padding(4);
             this.btnEZ.Name = "btnEZ";
             this.btnEZ.Size = new System.Drawing.Size(100, 28);
             this.btnEZ.TabIndex = 9;
@@ -4483,28 +4483,30 @@
             // btnTry
             // 
             this.btnTry.Location = new System.Drawing.Point(40, 591);
-            this.btnTry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTry.Margin = new System.Windows.Forms.Padding(4);
             this.btnTry.Name = "btnTry";
             this.btnTry.Size = new System.Drawing.Size(100, 28);
             this.btnTry.TabIndex = 11;
             this.btnTry.Text = "Restart";
             this.btnTry.UseVisualStyleBackColor = true;
+            this.btnTry.Click += new System.EventHandler(this.BtnTry_Click);
             // 
             // btnGive
             // 
             this.btnGive.Location = new System.Drawing.Point(260, 591);
-            this.btnGive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGive.Margin = new System.Windows.Forms.Padding(4);
             this.btnGive.Name = "btnGive";
             this.btnGive.Size = new System.Drawing.Size(100, 28);
             this.btnGive.TabIndex = 12;
             this.btnGive.Text = "Give Up";
             this.btnGive.UseVisualStyleBackColor = true;
+            this.btnGive.Click += new System.EventHandler(this.BtnGive_Click);
             // 
             // btnLeft
             // 
             this.btnLeft.Image = global::Minefield.Properties.Resources.left;
             this.btnLeft.Location = new System.Drawing.Point(499, 576);
-            this.btnLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLeft.Margin = new System.Windows.Forms.Padding(4);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(27, 25);
             this.btnLeft.TabIndex = 6;
@@ -4514,7 +4516,7 @@
             // 
             this.btnUp.Image = global::Minefield.Properties.Resources.up;
             this.btnUp.Location = new System.Drawing.Point(520, 555);
-            this.btnUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(27, 25);
             this.btnUp.TabIndex = 5;
@@ -4524,7 +4526,7 @@
             // 
             this.btnDown.Image = global::Minefield.Properties.Resources.down;
             this.btnDown.Location = new System.Drawing.Point(520, 597);
-            this.btnDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDown.Margin = new System.Windows.Forms.Padding(4);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(27, 25);
             this.btnDown.TabIndex = 4;
@@ -4534,7 +4536,7 @@
             // 
             this.btnRight.Image = global::Minefield.Properties.Resources.right;
             this.btnRight.Location = new System.Drawing.Point(543, 576);
-            this.btnRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRight.Margin = new System.Windows.Forms.Padding(4);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(27, 25);
             this.btnRight.TabIndex = 3;
@@ -4557,7 +4559,7 @@
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GameForm";
